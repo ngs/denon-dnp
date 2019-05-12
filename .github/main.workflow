@@ -1,10 +1,10 @@
 workflow "Build" {
-  on = "release"
   resolves = [
     "release darwin/amd64",
     "release windows/amd64",
     "release linux/amd64",
   ]
+  on = "release"
 }
 
 action "release darwin/amd64" {
